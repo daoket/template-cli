@@ -22,7 +22,7 @@
   "bin": {
     "temp": "index.js"
   },
-  "author": "jincieryi",
+  "author": "wtniu",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/daoket/template-cli/issues"
