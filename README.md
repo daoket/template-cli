@@ -18,20 +18,16 @@ temp init 模块名称
 
 - temp init Header
 - 终端中会提示请选择模版类型?
-- 模版类型有 5 种,选择相应的组件类型(下面有类型说明)
+- 模版类型有 1 种,选择相应的组件类型(下面有类型说明)
 - 然后就等待下载模版
 - 终端提醒模版创建成功,流程结束
 
 #### 组件类型说明
 
 - react-component------ES6 组件:包含生命周期的 React.Component 组件
-- react-function------函数组件:纯函数组件
-- react-redux------ES6 组件:包含生命周期的 React.Component 组件并且包含 redux 配置组件
-- react-function-typescript------typescript  函数组件    typescript 函数组件:纯函数组件
-- react-component-typescript------typescript ES6组件 typescript ES6 组件:包含生命周期的 React.Component 组件
 
-#### 组件模版地址:https://github.com/NewPrototype/template 
-#### 完成脚手架地址:https://github.com/NewPrototype/webpack4-es6-react
+#### 组件模版地址:https://github.com/daoket/template 
+#### 完成脚手架地址:https://github.com/daoket/template-cli
 
 #### npm发布流程
 
@@ -41,6 +37,10 @@ temp init 模块名称
 - npm publish 就可以看到提交了（只支持npm提交，如果用了淘宝镜像注意切换）
 
 
+测试：
 
+node index.js init A
+
+目前仅支持一种模板，暂不支持添加多个模板
 
 

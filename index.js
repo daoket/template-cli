@@ -20,15 +20,8 @@ const includes = ['index.ts', 'index.tsx', 'index.js', 'action.js', 'action.tsx'
  * 模版对应分支
  */
 const getType = {
-  "react-component------ES6组件": "component",
-  "react-function------函数组件": "master",
-  "react-redux------ES6组件": "redux",
-  // "react-function------typescript 函数组件": "function-typescript",
-  // "react-component------typescript ES6组件": "component-typescript",
-  // "react-redux------typescript ES6组件": "redux-typescript",
+  "react-component------admin后台": "SearchList",
 }
-
-
 
 program
   .version(package.version, '-v,--version')
@@ -46,12 +39,7 @@ program
             name: 'type',
             message: '请选择模版类型?',
             choices: [
-              'react-component------ES6组件',
-              'react-function------函数组件',
-              'react-redux------ES6组件',
-              // 'react-function------typescript 函数组件',
-              // 'react-component------typescript ES6组件',
-              // 'react-redux------typescript ES6组件',
+              'react-component------admin后台',
             ],
           },
         ])
@@ -60,7 +48,7 @@ program
           const spinner = ora('正在下载模板...');
           spinner.start();
           const type = getType[answers.type]
-          download(`github:daoket/template/#${type}`, name, err => {
+          download(`github:daoket/template`, name, err => {
             if (err) {
               spinner.fail();
             } else {

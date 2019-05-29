@@ -1,6 +1,6 @@
 {
   "name": "template-cli-wtniu",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "一键生成模版",
   "main": "index.js",
   "scripts": {
