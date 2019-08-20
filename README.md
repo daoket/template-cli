@@ -3,7 +3,7 @@
 ##### 安装方法
 
 ```
-npm i template-cli-wtniu -g
+sudo npm i template-cli-wtniu -g
 ```
 
 #### 使用方法
